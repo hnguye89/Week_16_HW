@@ -85,7 +85,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 
   3. What mitigation strategies can you recommendations for the client to protect their server: 
           
-          The client just have to pdate/patch the SMB. 
+          The client just have to update/patch the SMB. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
