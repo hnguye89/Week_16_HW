@@ -71,13 +71,21 @@ Your client has asked that you help identify any vulnerabilities with their file
 - Zenmap vulnerability script command: nmap --script ftp-vsftpd-backdoor, smb-enum-shares 192.168.0.10
 
 - Once you have identified this vulnerability, answer the following questions for your client:
-  1. What is the vulnerability: The vulnerabilities in in smb which allows unauthorized access. 
-
+  1. What is the vulnerability: 
           
+          The vulnerabilities in in smb which allows unauthorized access. 
+          
+![Week_16_part_4](https://user-images.githubusercontent.com/77870466/124809891-a5517200-df2e-11eb-9323-0d55e688514f.jpg)
+![Week_16_part_5](https://user-images.githubusercontent.com/77870466/124809893-a5517200-df2e-11eb-8f22-d9da9c080014.jpg)
+![Week_16_part-6](https://user-images.githubusercontent.com/77870466/124809894-a5ea0880-df2e-11eb-8294-dfb0ccbb9cb1.jpg)
 
-  2. Why is it dangerous: it allows for exfiltration of data. 
+  2. Why is it dangerous: 
+          
+           SMB allows for exfiltration of data and also allow their payloafs to spread through connected systems. 
 
-  3. What mitigation strategies can you recommendations for the client to protect their server: just update/patch the SMB. 
+  3. What mitigation strategies can you recommendations for the client to protect their server: 
+          
+          The client just have to pdate/patch the SMB. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
