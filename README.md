@@ -49,9 +49,14 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - Set the source to `demo.testfire.net`. 
 - Run the module. 
 
-Is Altoro Mutual vulnerable to XSS: Yes, this is the only vulnerability that is found
+Is Altoro Mutual vulnerable to XSS: 
+            
+        Yes, this is the only vulnerability that is found
 
 ![Week_16_part_2](https://user-images.githubusercontent.com/77870466/124801669-1855eb00-df25-11eb-9247-5ec4ddb9dda8.jpg)
+
+        This is when I use results.html which shows only one vulnerability. 
+![Week_16_part_3](https://user-images.githubusercontent.com/77870466/124803849-9dda9a80-df27-11eb-8b61-b2add637b04e.jpg)
 
 
 
@@ -59,18 +64,20 @@ Is Altoro Mutual vulnerable to XSS: Yes, this is the only vulnerability that is 
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
-- Command for Zenmap to run a service scan against the Metasploitable machine: 
+- Command for Zenmap to run a service scan against the Metasploitable machine: nmap -sV 192.168.0.10
  
-- Bonus command to output results into a new text file named `zenmapscan.txt`:
+- Bonus command to output results into a new text file named `zenmapscan.txt`: nmap -sV -oN zenmapscan.txt 192.168.0.10
 
-- Zenmap vulnerability script command: 
+- Zenmap vulnerability script command: nmap --script ftp-vsftpd-backdoor, smb-enum-shares 192.168.0.10
 
 - Once you have identified this vulnerability, answer the following questions for your client:
-  1. What is the vulnerability:
+  1. What is the vulnerability: The vulnerabilities in in smb which allows unauthorized access. 
 
-  2. Why is it dangerous:
+          
 
-  3. What mitigation strategies can you recommendations for the client to protect their server:
+  2. Why is it dangerous: it allows for exfiltration of data. 
+
+  3. What mitigation strategies can you recommendations for the client to protect their server: just update/patch the SMB. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
